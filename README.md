@@ -11,12 +11,6 @@
 </p>
 
 <p align="center">
-  <a href="#quick-start-cpu-only-no-credentials"><img src="https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white" alt="Python 3.11+"></a>
-  <a href="#method"><img src="https://img.shields.io/badge/training--free-frozen%20weights-555555" alt="Training-free"></a>
-  <a href="#running-the-experiments"><img src="https://img.shields.io/badge/editors-Bernini%20%7C%20Ditto-E0A030" alt="Editors: Bernini, Ditto"></a>
-</p>
-
-<p align="center">
   <a href="#method">Method</a> ·
   <a href="#benchmark">Benchmark</a> ·
   <a href="#results">Results</a> ·
