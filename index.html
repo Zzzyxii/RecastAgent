@@ -46,7 +46,10 @@ header{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;
 header nav{display:flex;gap:22px;margin-left:auto;font-size:14px}
 header nav a{text-decoration:none;color:var(--ink-soft)}
 header nav a:hover{color:var(--ink)}
-@media(max-width:760px){header nav{display:none}.bar-row{grid-template-columns:1fr 70px}.bar-row .bar-track{grid-column:1/-1;order:3}}
+.gh-star{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600;text-decoration:none;color:var(--ink);border:1px solid rgba(255,255,255,.22);transition:background .2s,color .2s,border-color .2s}
+.gh-star:hover{background:var(--gold);color:#1a1405;border-color:var(--gold)}
+.gh-star-count{padding-left:8px;border-left:1px solid currentColor;font-variant-numeric:tabular-nums}
+@media(max-width:760px){header nav{display:none}.gh-star{margin-left:auto}.bar-row{grid-template-columns:1fr 70px}.bar-row .bar-track{grid-column:1/-1;order:3}}
 
 /* hero */
 .hero{position:relative;min-height:100vh;display:grid;align-items:center;padding:110px 0 70px;overflow:hidden;background:var(--bg);color:var(--ink)}
@@ -94,6 +97,8 @@ header nav a:hover{color:var(--ink)}
 .grid-videos{display:grid;gap:14px}
 .vcell{background:#000;border-radius:10px;overflow:hidden;position:relative;border:1px solid var(--line)}
 .vcell video{width:100%;aspect-ratio:16/9;object-fit:cover;background:#05070c}
+.portrait .vcell video{aspect-ratio:9/16;object-fit:contain;max-height:62vh}
+.portrait.grid-videos{max-width:980px;margin:0 auto}
 .vcell figcaption{position:absolute;top:10px;left:10px;font-size:12px;font-weight:700;letter-spacing:.04em;padding:4px 10px;border-radius:6px;background:rgba(10,14,24,.78);color:var(--ink)}
 .vcell.ours{border:2px solid var(--gold);box-shadow:0 0 0 4px var(--gold-soft)}
 .vcell.ours figcaption{background:var(--gold);color:#1a1405}
@@ -106,8 +111,9 @@ header nav a:hover{color:var(--ink)}
 .filters button{padding:7px 14px;border-radius:999px;border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--ink-soft)}
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .filters button span{opacity:.6;margin-left:4px}
-.thumbs{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 14px;margin-bottom:18px;scroll-snap-type:x proximity;scrollbar-width:thin}
-.thumbs button{flex:0 0 156px;scroll-snap-align:start;text-align:left;border-radius:10px;padding:0;overflow:hidden;border:2px solid transparent;background:var(--panel);transition:.15s;opacity:.72}
+.thumbs{display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:156px;gap:10px;overflow-x:auto;padding:4px 2px 14px;margin-bottom:18px;scroll-snap-type:x proximity;scrollbar-width:thin}
+.thumbs.one{grid-template-rows:auto}
+.thumbs button{scroll-snap-align:start;text-align:left;border-radius:10px;padding:0;overflow:hidden;border:2px solid transparent;background:var(--panel);transition:.15s;opacity:.72}
 .thumbs button:hover{opacity:1}
 .thumbs button[aria-selected="true"]{border-color:var(--gold);opacity:1}
 .thumbs img{width:100%;aspect-ratio:16/9;object-fit:cover}
@@ -191,6 +197,7 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
   <nav aria-label="Primary">
     <a href="#gallery">Gallery</a><a href="#method">Method</a><a href="#benchmark">Benchmark</a><a href="#results">Results</a><a href="#citation">Citation</a>
   </nav>
+  <a class="gh-star" href="https://github.com/Zzzyxii/RecastAgent" rel="noopener" target="_blank" aria-label="Star RecastAgent on GitHub"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>Star</span><span class="gh-star-count" hidden></span></a>
 </header>
 
 <main id="top">
@@ -210,8 +217,8 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
     </div>
     <figure class="hero-card">
       <div class="slider hero-slider" id="hero-slider" style="--pos:60%">
-        <video class="bottom" src="assets/hero/source.webm" poster="assets/hero/source.jpg" autoplay muted loop playsinline></video>
-        <video class="top" src="assets/hero/recast.webm" poster="assets/hero/recast.jpg" autoplay muted loop playsinline></video>
+        <video class="bottom" data-src="assets/hero/source.webm" poster="assets/hero/source.jpg" muted loop playsinline preload="none"></video>
+        <video class="top" data-src="assets/hero/recast.webm" poster="assets/hero/recast.jpg" muted loop playsinline preload="none"></video>
         <span class="bar"></span><span class="knob">⇆</span>
         <span class="lab l">Source</span><span class="lab r">RecastAgent</span>
       </div>
@@ -386,6 +393,7 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
     b.addEventListener('timeupdate', () => { if (Math.abs(a.currentTime - b.currentTime) > .12) a.currentTime = b.currentTime; });
   }
   document.querySelectorAll('.slider').forEach(slider);
+  addEventListener('load', () => document.querySelectorAll('.hero-slider video').forEach(v => { v.src = v.dataset.src; v.play().catch(() => {}); }));
 
   // Reveal on scroll.
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
@@ -408,7 +416,8 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
   filters.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; filter = b.dataset.f; filters.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b)); build(); show(visible[0]); });
   function build(){
     visible = cases.map((c, i) => i).filter(i => filter === 'All' || cases[i].style === filter);
-    tabs.innerHTML = visible.map(i => { const c = cases[i]; return `<button role="tab" data-i="${i}"><img src="${c.poster}" alt="" loading="lazy"><span>${c.title}<small>${c.editor} · ${c.split === 'test' ? 'held-out' : 'dev'}</small></span></button>`; }).join('');
+    tabs.classList.toggle('one', visible.length <= 8);
+    tabs.innerHTML = visible.map(i => { const c = cases[i]; return `<button role="tab" data-i="${i}"><img src="${c.poster}" alt="" loading="lazy" decoding="async" width="156" height="88"><span>${c.title}<small>${c.editor} · ${c.split === 'test' ? 'held-out' : 'dev'}</small></span></button>`; }).join('');
   }
   tabs.addEventListener('click', e => { const b = e.target.closest('button'); if (b) show(+b.dataset.i); });
   function vids(){ return [...document.querySelectorAll('#case video')].filter(v => v.offsetParent !== null); }
@@ -420,9 +429,12 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
     const keys = order.filter(k => c.files[k]);
     const grid = $('#videos');
     grid.style.gridTemplateColumns = innerWidth < 760 ? '1fr' : `repeat(${keys.length > 3 ? Math.ceil(keys.length / 2) : keys.length}, 1fr)`;
-    grid.innerHTML = keys.map(k => `<figure class="vcell ${k === 'planner' ? 'ours' : ''}"><video muted loop playsinline preload="metadata" src="${c.files[k]}"></video><figcaption>${labels[k]}</figcaption></figure>`).join('');
+    grid.classList.toggle('portrait', !!c.portrait);
+    if (c.portrait && innerWidth >= 760) grid.style.gridTemplateColumns = `repeat(${keys.length}, 1fr)`;
+    grid.innerHTML = keys.map(k => `<figure class="vcell ${k === 'planner' ? 'ours' : ''}"><video muted loop playsinline preload="none" poster="${c.files[k].replace(/\.webm$/, '.jpg')}" data-src="${c.files[k]}"></video><figcaption>${labels[k]}</figcaption></figure>`).join('');
     const sl = $('#slider');
-    sl.querySelector('.bottom').src = c.files.source; sl.querySelector('.top').src = c.files.planner;
+    sl.querySelector('.bottom').dataset.src = c.files.source; sl.querySelector('.top').dataset.src = c.files.planner;
+    sl.querySelectorAll('video').forEach(v => { v.removeAttribute('src'); v.poster = v.dataset.src.replace(/\.webm$/, '.jpg'); v.preload = 'none'; });
     $('#note').textContent = c.note || '';
     $('#count').textContent = `${visible.indexOf(i) + 1} / ${visible.length}`;
     applyMode(); restart();
@@ -434,12 +446,14 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
     $('#videos').hidden = mode !== 'grid'; $('#slider').hidden = mode !== 'slider';
     document.querySelectorAll('.mode button').forEach(b => b.setAttribute('aria-pressed', b.dataset.mode === mode));
   }
-  function restart(){ const v = vids(); v.forEach(x => { x.currentTime = 0; }); v.forEach(x => x.play().catch(() => {})); $('#pause').textContent = '❚❚ Pause'; }
+  let near = false;
+  function attach(){ vids().forEach(v => { if (v.dataset.src && v.getAttribute('src') !== v.dataset.src) { v.preload = 'auto'; v.src = v.dataset.src; } }); }
+  function restart(){ if (!near) return; attach(); const v = vids(); v.forEach(x => { x.currentTime = 0; }); v.forEach(x => x.play().catch(() => {})); $('#pause').textContent = '❚❚ Pause'; }
   document.querySelectorAll('.mode button').forEach(b => b.addEventListener('click', () => { mode = b.dataset.mode; applyMode(); restart(); }));
   $('#sync').addEventListener('click', restart);
   $('#pause').addEventListener('click', e => { const v = vids(); const p = v.some(x => !x.paused); v.forEach(x => p ? x.pause() : x.play()); e.target.textContent = p ? '▶ Play' : '❚❚ Pause'; });
   // Only play gallery videos while visible.
-  new IntersectionObserver(es => es.forEach(e => vids().forEach(v => e.isIntersecting ? v.play().catch(() => {}) : v.pause())), {threshold:.2}).observe($('#case'));
+  new IntersectionObserver(es => es.forEach(e => { near = e.isIntersecting; if (near) restart(); else vids().forEach(v => v.pause()); }), {rootMargin:'300px 0px'}).observe($('#case'));
   if (cases.length) { build(); show(0); } else $('#gallery').hidden = true;
 
   // Pairwise bars (Table 1a).
@@ -471,6 +485,17 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
 
   $('#copy').addEventListener('click', () => { const t = $('#bib').textContent.replace(/^Copy/, ''); navigator.clipboard.writeText(t.trim()); $('#copy').textContent = 'Copied'; setTimeout(() => $('#copy').textContent = 'Copy', 1500); });
 })();
+</script>
+<script>
+fetch('https://api.github.com/repos/Zzzyxii/RecastAgent')
+  .then(r => r.ok ? r.json() : Promise.reject())
+  .then(({ stargazers_count: n }) => {
+    if (typeof n !== 'number') return;
+    const el = document.querySelector('.gh-star-count');
+    el.textContent = n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : n;
+    el.hidden = false;
+  })
+  .catch(() => {});
 </script>
 </body>
 </html>
