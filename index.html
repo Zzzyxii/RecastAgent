@@ -95,6 +95,8 @@ header nav a:hover{color:var(--ink)}
 .request{font-size:17px;color:var(--ink);background:var(--panel);border-left:3px solid var(--gold);padding:16px 20px;border-radius:0 10px 10px 0;margin-bottom:22px}
 .request b{color:var(--gold);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:4px}
 .grid-videos{display:grid;gap:14px}
+#case{min-height:760px}
+@media(max-width:760px){#case{min-height:0}}
 .vcell{background:#000;border-radius:10px;overflow:hidden;position:relative;border:1px solid var(--line)}
 .vcell video{width:100%;aspect-ratio:16/9;object-fit:cover;background:#05070c}
 .portrait .vcell video{aspect-ratio:9/16;object-fit:contain;max-height:62vh}
@@ -134,7 +136,7 @@ header nav a:hover{color:var(--ink)}
 
 /* figures */
 .fig{margin-top:40px;background:#fff;border:1px solid var(--paper-line);border-radius:var(--radius);padding:22px;cursor:zoom-in}
-.fig img{width:100%;border-radius:8px}
+.fig img{width:100%;height:auto;border-radius:8px}
 .fig figcaption{margin-top:14px;font-size:14px;color:var(--paper-soft)}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
 .cols h3{font:700 20px var(--display);margin-bottom:8px}
@@ -237,7 +239,7 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
       <div class="reveal"><span class="ico">🔍</span><h3>Visual Critic</h3><p>Inspects native frames and crops of every result against the original request and returns qualitative feedback, not a score.</p></div>
       <div class="reveal"><span class="ico">📚</span><h3>Experience Accumulation</h3><p>After each development task, distills the trajectory into conditional, evidence-linked advice. The library is frozen before held-out tests.</p></div>
     </div>
-    <figure class="fig reveal" data-zoom><img src="assets/figures/teaser.png" alt="Single-pass editing, PE Loop and RecastAgent compared on recasting a cyclist into outer space" loading="lazy"><figcaption>Single-pass editors edit once; PE Loop only rewrites prompts and always restarts from the source. RecastAgent chooses both video states and prompts under an independent Critic and consults frozen design references and experience. All model weights stay frozen.</figcaption></figure>
+    <figure class="fig reveal" data-zoom><img width="1600" height="736" src="assets/figures/teaser.png" alt="Single-pass editing, PE Loop and RecastAgent compared on recasting a cyclist into outer space" loading="lazy"><figcaption>Single-pass editors edit once; PE Loop only rewrites prompts and always restarts from the source. RecastAgent chooses both video states and prompts under an independent Critic and consults frozen design references and experience. All model weights stay frozen.</figcaption></figure>
   </div>
 </section>
 
@@ -272,7 +274,7 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
     <p class="kicker reveal">Method</p>
     <h2 class="reveal">Plan, edit, critique, choose. Then remember.</h2>
     <p class="lead reveal">Within a task, the Planner grounds the request in the source, edits with a frozen video editor and listens to the Critic. Across tasks, finished trajectories become reusable, conditional advice.</p>
-    <figure class="fig reveal" data-zoom><img src="assets/figures/method.png" alt="RecastAgent workflow: within-task planning and branching, cross-task experience distillation" loading="lazy"><figcaption>(a) Within a task: source observations and frozen references feed the Planner, which picks an input and prompt, saves every successful candidate and receives independent visual critique. The total budget is four generations, and any saved candidate can be delivered. (b) Across tasks: only development trajectories contribute experience, and the consolidated library is frozen before held-out tests.</figcaption></figure>
+    <figure class="fig reveal" data-zoom><img width="1600" height="652" src="assets/figures/method.png" alt="RecastAgent workflow: within-task planning and branching, cross-task experience distillation" loading="lazy"><figcaption>(a) Within a task: source observations and frozen references feed the Planner, which picks an input and prompt, saves every successful candidate and receives independent visual critique. The total budget is four generations, and any saved candidate can be delivered. (b) Across tasks: only development trajectories contribute experience, and the consolidated library is frozen before held-out tests.</figcaption></figure>
     <div class="cols">
       <div class="reveal">
         <h3>Input choice, not just prompt choice</h3>
@@ -308,12 +310,12 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
       <div class="stat reveal"><b>40 / 27</b><span>development / held-out sources</span></div>
     </div>
     <div class="bench">
-      <figure class="fig reveal" data-zoom style="margin-top:0"><img src="assets/figures/benchmark.png" alt="Benchmark composition" loading="lazy"></figure>
+      <figure class="fig reveal" data-zoom style="margin-top:0"><img width="600" height="637" src="assets/figures/benchmark.png" alt="Benchmark composition" loading="lazy"></figure>
       <div>
-        <figure class="fig reveal" data-zoom style="margin-top:0"><img src="assets/figures/request_statistics.png" alt="Request length distribution and word cloud" loading="lazy"><figcaption>Short requests average 15.2 words, detailed requests 62.7. Related clips form 56 source groups, and the split is source-disjoint.</figcaption></figure>
+        <figure class="fig reveal" data-zoom style="margin-top:0"><img width="1600" height="598" src="assets/figures/request_statistics.png" alt="Request length distribution and word cloud" loading="lazy"><figcaption>Short requests average 15.2 words, detailed requests 62.7. Related clips form 56 source groups, and the split is source-disjoint.</figcaption></figure>
       </div>
     </div>
-    <figure class="fig reveal" data-zoom><img src="assets/figures/case_029.jpg" alt="Paired short and detailed instructions for source 029" loading="lazy"><figcaption>Source 029, a Coco-style performance. The detailed request adds clothing, courtyard, banners, warm windows and dusk; both keep the performer, guitar and playing gestures.</figcaption></figure>
+    <figure class="fig reveal" data-zoom><img width="1600" height="1158" src="assets/figures/case_029.jpg" alt="Paired short and detailed instructions for source 029" loading="lazy"><figcaption>Source 029, a Coco-style performance. The detailed request adds clothing, courtyard, banners, warm windows and dusk; both keep the performer, guitar and playing gestures.</figcaption></figure>
     <div class="cols">
       <div class="reveal"><h3>What the judges check</h3><p><b>Instruction diagnostics</b> separate explicit-request completion, required source correspondence and unrequested damage. Detailed requests add binding and joint satisfaction; short ones add style realization, scene-specific design and creativity.</p></div>
       <div class="reveal"><h3>How they judge</h3><p>GLM-5.3-Flash and Claude-Sonnet-5.5 independently rate anonymized outputs on five axes from 0 to 4 (TR, CP, TC, VI, AC), using frame plans derived from the source. Blind pairwise comparisons run in both orders, and only order-consistent outcomes count.</p></div>
@@ -342,7 +344,7 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
     <div class="seg" role="group" aria-label="Editor" id="editor-seg"><button aria-pressed="true" data-e="Bernini">Bernini</button><button aria-pressed="false" data-e="Ditto">Ditto</button></div>
     <div class="table-wrap"><table class="res" id="quality"></table></div>
     <p class="note">TR target realization · CP content correspondence · TC temporal consistency · VI visual integrity · AC aesthetic coordination. Initial / Accumulated = Planner with E<sub>0</sub> / E<sub>1</sub>. † Bernini PE Loop uses a mixed evaluation cohort.</p>
-    <figure class="fig" data-zoom><img src="assets/figures/quality.png" alt="Five-axis quality per editor and judge" loading="lazy"></figure>
+    <figure class="fig" data-zoom><img width="1600" height="860" src="assets/figures/quality.png" alt="Five-axis quality per editor and judge" loading="lazy"></figure>
 
     <h3 style="font:700 22px var(--display);margin-top:56px">Zero-shot transfer with Bernini</h3>
     <div class="table-wrap"><table class="res">
@@ -380,6 +382,8 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
 
 <script src="assets/cases.js"></script>
 <script>
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+if (!location.hash) scrollTo(0, 0);
 (() => {
   const $ = s => document.querySelector(s);
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -423,7 +427,7 @@ footer{padding:40px 0;background:var(--bg);color:var(--ink-faint);font-size:14px
   function vids(){ return [...document.querySelectorAll('#case video')].filter(v => v.offsetParent !== null); }
   function show(i){
     idx = i; const c = cases[i];
-    tabs.querySelectorAll('button').forEach(b => { const on = +b.dataset.i === i; b.setAttribute('aria-selected', on); if (on) b.scrollIntoView({block:'nearest', inline:'nearest', behavior: reduce ? 'auto' : 'smooth'}); });
+    tabs.querySelectorAll('button').forEach(b => { const on = +b.dataset.i === i; b.setAttribute('aria-selected', on); if (on) { const l = b.offsetLeft - tabs.offsetLeft, r = l + b.offsetWidth; if (l < tabs.scrollLeft || r > tabs.scrollLeft + tabs.clientWidth) tabs.scrollTo({left: l - 12, behavior: reduce ? 'auto' : 'smooth'}); } });
     $('#meta').innerHTML = `<span class="chip">${c.editor}</span><span class="chip">${c.style}</span><span class="chip">${c.form === 'long' ? 'Detailed request' : 'Short request'}</span><span class="chip ${c.split === 'test' ? 'test' : ''}">${c.split === 'test' ? 'Held-out test' : 'Development'}</span>`;
     $('#request').innerHTML = `<b>Request</b>${c.request}`;
     const keys = order.filter(k => c.files[k]);
