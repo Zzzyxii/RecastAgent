@@ -3,10 +3,17 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white" alt="Python 3.11+">
-  <img src="https://img.shields.io/badge/training--free-frozen%20weights-2E7D32" alt="Training-free">
-  <img src="https://img.shields.io/badge/editors-Bernini%20%7C%20Ditto-E0A030" alt="Editors: Bernini, Ditto">
-  <img src="https://img.shields.io/badge/benchmark-67%20videos%20%C2%B7%20134%20tasks-7A5C9E" alt="Benchmark: 67 videos, 134 tasks">
+  <a href="#citation"><img src="https://img.shields.io/badge/Paper-coming%20soon-B31B1B?logo=arxiv&logoColor=white" alt="Paper (coming soon)"></a>
+  <a href="https://zzzyxii.github.io/RecastAgent/"><img src="https://img.shields.io/badge/Project-Page-1F6FEB?logo=githubpages&logoColor=white" alt="Project page"></a>
+  <a href="benchmark_data/README.md"><img src="https://img.shields.io/badge/Benchmark-67%20videos%20%C2%B7%20134%20tasks-7A5C9E" alt="Benchmark: 67 videos, 134 tasks"></a>
+  <a href="#benchmark"><img src="https://img.shields.io/badge/Data-videos%20coming%20soon-FFB000?logo=huggingface&logoColor=white" alt="Benchmark videos (coming soon)"></a>
+  <a href="knowledge/README.md"><img src="https://img.shields.io/badge/Knowledge-experience%20library-2E7D32" alt="Knowledge and experience library"></a>
+</p>
+
+<p align="center">
+  <a href="#quick-start-cpu-only-no-credentials"><img src="https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white" alt="Python 3.11+"></a>
+  <a href="#method"><img src="https://img.shields.io/badge/training--free-frozen%20weights-555555" alt="Training-free"></a>
+  <a href="#running-the-experiments"><img src="https://img.shields.io/badge/editors-Bernini%20%7C%20Ditto-E0A030" alt="Editors: Bernini, Ditto"></a>
 </p>
 
 <p align="center">
