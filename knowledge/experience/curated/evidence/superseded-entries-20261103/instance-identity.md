@@ -1,0 +1,23 @@
+# EX-instance-identity: Protect the individual by reducing competing reconstruction
+
+Revision 5. Approved for use; goal-directed semantic revision authorized on 2026-11-02. Bernini and Ditto; R6/X4/B4/D3 plus the seven-task batch.
+
+**When identity matters, favor an input that still shows the right individual and reduce unnecessary reconstruction around that person. Keep identity wording concise and direct; spend design effort on the surrounding transformations instead of building an increasingly detailed substitute face.**
+
+## Describing a type can reconstruct a different person
+
+Age, hairstyle and glasses describe appearance categories. A renderer can satisfy those words while replacing the individual. Historical Ditto table-tennis attempts recovered glasses in one result without recovering the face; other descriptions produced older faces or opaque eyewear. Bernini F002 v2 improved the pianist's resemblance while worsening a guest, and F005 v3 enumerated hair and glasses without recovering the original identities.
+
+Distinguish individual correspondence from the person's activity and role. The same recognizable person can act differently in an adapted scene; preserving the face does not require preserving the source profession, task or prop. When the request transforms the character itself, choose the correspondence that makes that transformation legible instead of reinstating incidental source features.
+
+The practical consequence is to examine what invites an unintended new person into the scene. A new social setting, collar, headwear, pose or facial illumination can interact with the face. For preservation tasks, prefer a realization that keeps those unnecessary structural changes small while delivering style through clothing surfaces, architecture and light elsewhere. Keep required costume changes explicit, and describe their extent where it helps separate them from the face.
+
+## Choose evidence-rich inputs and scoped designs
+
+If a candidate has already replaced a face, prefer the source or an earlier recognizable candidate for another identity-sensitive attempt. That choice restores useful evidence; pair it with a reconsideration of the competing transformation. Reusing the same whole-scene reconstruction leaves the same identity problem in play.
+
+A below-neck boundary is a useful way to express clothing scope when the request permits it. F004 v2 accompanied that boundary with a better face judgment. F002 v3 also used it, retained explicit tuxedo instructions, and still lost identity and clothing quality. Accordingly, use the boundary to clarify a coherent design rather than as a magic phrase, and keep the target garment fully specified.
+
+In multi-person scenes, inspect each individual and their accessories separately: better resemblance in the main subject can conceal a substitution elsewhere. F006's single prominent subject retained a recognizable face despite major surrounding changes. Use that contrast to look for concrete person-scene conflicts rather than abandoning ambitious environment edits. Close facial performance or user-required headwear can justify a different tradeoff than a distant incidental person.
+
+**Evidence.** Ditto full (not published), Ditto no-knowledge (not published); F002 (not published), v2/v3; F003 (not published), v2; F004 (not published), v2; F005 (not published), v3; F006 (not published). Online judgments with sampled visual corroboration (not published); scene density and head-region interaction are diagnostic conditions to examine, not isolated measured causes. Related: [input choice](input-conditioning.md), [lighting](lighting-integration.md).

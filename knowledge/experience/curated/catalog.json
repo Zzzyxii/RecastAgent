@@ -1,0 +1,1480 @@
+{
+  "schema": "creative-experience-catalog-v2",
+  "revision": "layered-6936b9ff8cb52bff",
+  "entries": [
+    {
+      "id": "EX-P-compare-retained",
+      "title": "Choose the delivery among all retained candidates, judged on the whole recast",
+      "summary": "Compare every retained candidate on how fully the world was rebuilt, whether the moment is still recognizable, and how stable and clean it is. The newest or the most repaired version is not automatically the best, and a polished result that kept the old scene is not finished.",
+      "questions": [
+        "Which candidate should I deliver?",
+        "Is the latest repair better than an earlier version?",
+        "How do I weigh conversion against stability?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "principle",
+      "evidence_ids": [
+        "EV-historical-score-extract",
+        "EV-batch-facts",
+        "EV-F003",
+        "EV-F004",
+        "EV-F006",
+        "EV-F007",
+        "EV-V5-train-cases"
+      ],
+      "stages": [
+        "deliver",
+        "revise"
+      ],
+      "path": "knowledge/experience/curated/entries/P-compare-retained.md",
+      "version": "1",
+      "sha256": "273ecabddf35f0bf07a605322a4fa333495adb445735d9992e746cd98e6a0cec",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Choose the delivery among all retained candidates, judged on the whole recast",
+        "Which candidate should I deliver?",
+        "Is the latest repair better than an earlier version?",
+        "How do I weigh conversion against stability?"
+      ],
+      "applicability": "Compare every retained candidate on how fully the world was rebuilt, whether the moment is still recognizable, and how stable and clean it is. The newest or the most repaired version is not automatically the best, and a polished result that kept the old scene is not finished.",
+      "recommendation": "Compare every retained candidate on how fully the world was rebuilt, whether the moment is still recognizable, and how stable and clean it is. The newest or the most repaired version is not automatically the best, and a polished result that kept the old scene is not finished."
+    },
+    {
+      "id": "EX-P-counterparts",
+      "title": "Give each source element a counterpart in the new world",
+      "summary": "Map each important source element to a specific, fitting counterpart (a glove to a C-shaped brick hand, a plank to a stack of tan plates) and name the carrier of each effect. Generic theme decoration does not do this work.",
+      "questions": [
+        "How do I translate source objects and actions into another world?",
+        "Why did the effect appear on the wrong part?",
+        "Why does the result look like decoration rather than adaptation?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "principle",
+      "evidence_ids": [
+        "EV-F004",
+        "EV-B-FS4-full",
+        "EV-D-027-full",
+        "EV-H-B-fewshot_004__long__no_knowledge",
+        "EV-V5-LEGO-planes"
+      ],
+      "stages": [
+        "design",
+        "revise"
+      ],
+      "path": "knowledge/experience/curated/entries/P-counterparts.md",
+      "version": "1",
+      "sha256": "7c8d9a270a60f61eac2d6972bbb361a0173be74a46b388f20209ec51c4b2cce3",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Give each source element a counterpart in the new world",
+        "How do I translate source objects and actions into another world?",
+        "Why did the effect appear on the wrong part?",
+        "Why does the result look like decoration rather than adaptation?"
+      ],
+      "applicability": "Map each important source element to a specific, fitting counterpart (a glove to a C-shaped brick hand, a plank to a stack of tan plates) and name the carrier of each effect. Generic theme decoration does not do this work.",
+      "recommendation": "Map each important source element to a specific, fitting counterpart (a glove to a C-shaped brick hand, a plank to a stack of tan plates) and name the carrier of each effect. Generic theme decoration does not do this work."
+    },
+    {
+      "id": "EX-P-every-plane",
+      "title": "Rebuild every plane, not just the subject",
+      "summary": "Describe how the target medium builds each visible plane. If a named plane still stays photographic, revise its construction, visual relationships and input support instead of adding the same object name again.",
+      "questions": [
+        "Why does the result still look like the original place?",
+        "Why does a stylized subject look pasted onto a real background?",
+        "What do I need to describe besides the main character?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "principle",
+      "evidence_ids": [
+        "EV-F001",
+        "EV-F004",
+        "EV-F005",
+        "EV-F006",
+        "EV-F007",
+        "EV-D-FS4-full",
+        "EV-V5-LEGO-planes",
+        "EV-V5-case-reading"
+      ],
+      "stages": [
+        "design",
+        "inspect"
+      ],
+      "path": "knowledge/experience/curated/entries/P-every-plane.md",
+      "version": "2",
+      "sha256": "3c9dd19623a8dbe3666a223e3bcecc816b756368fb6790bb21c2291b29e3f093",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md",
+      "aliases": [
+        "Rebuild every plane, not just the subject",
+        "Why does the result still look like the original place?",
+        "Why does a stylized subject look pasted onto a real background?",
+        "What do I need to describe besides the main character?"
+      ],
+      "applicability": "Describe how the target medium builds each visible plane. If a named plane still stays photographic, revise its construction, visual relationships and input support instead of adding the same object name again.",
+      "recommendation": "Describe how the target medium builds each visible plane. If a named plane still stays photographic, revise its construction, visual relationships and input support instead of adding the same object name again."
+    },
+    {
+      "id": "EX-P-identity",
+      "title": "Keep who they are, change what they are wearing and doing",
+      "summary": "Preserve the person at role level and keep salient attributes (age group, skin tone, build) unless the new world changes them. Keep identity wording short and spend design effort around the face; long facial inventories rebuild a different person.",
+      "questions": [
+        "How do I keep the same person in a different world?",
+        "Why did the person change into someone else?",
+        "When is changing a character's look part of the task?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "principle",
+      "evidence_ids": [
+        "EV-F002",
+        "EV-F003",
+        "EV-F004",
+        "EV-F005",
+        "EV-F006",
+        "EV-D-FS4-full",
+        "EV-D-FS4-no"
+      ],
+      "stages": [
+        "design",
+        "revise"
+      ],
+      "path": "knowledge/experience/curated/entries/P-identity.md",
+      "version": "1",
+      "sha256": "6371c7dc4b61807a10a45fb1bf05033221aaf271e35fb7d35b24b8c779bef820",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Keep who they are, change what they are wearing and doing",
+        "How do I keep the same person in a different world?",
+        "Why did the person change into someone else?",
+        "When is changing a character's look part of the task?"
+      ],
+      "applicability": "Preserve the person at role level and keep salient attributes (age group, skin tone, build) unless the new world changes them. Keep identity wording short and spend design effort around the face; long facial inventories rebuild a different person.",
+      "recommendation": "Preserve the person at role level and keep salient attributes (age group, skin tone, build) unless the new world changes them. Keep identity wording short and spend design effort around the face; long facial inventories rebuild a different person."
+    },
+    {
+      "id": "EX-P-medium-logic",
+      "title": "Describe how the medium builds the picture, and light as part of it",
+      "summary": "Write the construction rules of the target medium (what makes a mark, a surface, a shadow) and what the light does to each plane. Style names and adjectives alone leave the renderer to guess, and lamps alone do not change the lighting.",
+      "questions": [
+        "How do I make a style read as that medium rather than a color filter?",
+        "Why did added lamps not change the atmosphere?",
+        "What should I write instead of a list of style adjectives?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "principle",
+      "evidence_ids": [
+        "EV-F002",
+        "EV-F004",
+        "EV-F005",
+        "EV-F007",
+        "EV-H-B-027__short__full_knowledge",
+        "EV-V5-LEGO-planes",
+        "EV-H-D-benchmark__001__short"
+      ],
+      "stages": [
+        "design"
+      ],
+      "path": "knowledge/experience/curated/entries/P-medium-logic.md",
+      "version": "1",
+      "sha256": "4713973fb2402a015f7d51a6537cbfc011518beb52bc0dbd196f292966d38b92",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Describe how the medium builds the picture, and light as part of it",
+        "How do I make a style read as that medium rather than a color filter?",
+        "Why did added lamps not change the atmosphere?",
+        "What should I write instead of a list of style adjectives?"
+      ],
+      "applicability": "Write the construction rules of the target medium (what makes a mark, a surface, a shadow) and what the light does to each plane. Style names and adjectives alone leave the renderer to guess, and lamps alone do not change the lighting.",
+      "recommendation": "Write the construction rules of the target medium (what makes a mark, a surface, a shadow) and what the light does to each plane. Style names and adjectives alone leave the renderer to guess, and lamps alone do not change the lighting."
+    },
+    {
+      "id": "EX-P-moment",
+      "title": "Define the moment before choosing what to rebuild",
+      "summary": "Before the first generation, write down who acts, what happens, in what order, where, and from which camera position. Keep that skeleton recognizable and rebuild everything else in the target world.",
+      "questions": [
+        "What must stay recognizable when the video moves into another world or medium?",
+        "Which source actions are performance material and which are old-world functions to replace?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "principle",
+      "evidence_ids": [
+        "EV-F001",
+        "EV-F001-creative-first",
+        "EV-semantic-goal-review",
+        "EV-F003",
+        "EV-F005"
+      ],
+      "stages": [
+        "design"
+      ],
+      "path": "knowledge/experience/curated/entries/P-moment.md",
+      "version": "1",
+      "sha256": "cd77d3a0e5e94d141563ebf1ae69cd5cffe738655296533562453faaaa77d5f5",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Define the moment before choosing what to rebuild",
+        "What must stay recognizable when the video moves into another world or medium?",
+        "Which source actions are performance material and which are old-world functions to replace?"
+      ],
+      "applicability": "Before the first generation, write down who acts, what happens, in what order, where, and from which camera position. Keep that skeleton recognizable and rebuild everything else in the target world.",
+      "recommendation": "Before the first generation, write down who acts, what happens, in what order, where, and from which camera position. Keep that skeleton recognizable and rebuild everything else in the target world."
+    },
+    {
+      "id": "EX-P-spend-attempts",
+      "title": "Spend attempts on different realizations, and keep what you had",
+      "summary": "Use remaining generations to try a genuinely different construction, input or scope, not a restated version of what failed. Keep earlier candidates as options. In a fixed-budget task, use the full allowance before choosing.",
+      "questions": [
+        "What should I change when a second attempt fails the same way?",
+        "How do I use my remaining generations?",
+        "Should I stop after one good result?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "principle",
+      "evidence_ids": [
+        "EV-B-003",
+        "EV-H-D-benchmark__003__short",
+        "EV-H-D-024__long__full_knowledge",
+        "EV-F003",
+        "EV-F005",
+        "EV-V5-train-cases"
+      ],
+      "stages": [
+        "revise",
+        "deliver"
+      ],
+      "path": "knowledge/experience/curated/entries/P-spend-attempts.md",
+      "version": "1",
+      "sha256": "c00e8f35c37b79cffb44b9243172d59669d55a1c8e86e36f5c4eb1b57495259b",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Spend attempts on different realizations, and keep what you had",
+        "What should I change when a second attempt fails the same way?",
+        "How do I use my remaining generations?",
+        "Should I stop after one good result?"
+      ],
+      "applicability": "Use remaining generations to try a genuinely different construction, input or scope, not a restated version of what failed. Keep earlier candidates as options. In a fixed-budget task, use the full allowance before choosing.",
+      "recommendation": "Use remaining generations to try a genuinely different construction, input or scope, not a restated version of what failed. Keep earlier candidates as options. In a fixed-budget task, use the full allowance before choosing."
+    },
+    {
+      "id": "EX-P-worst-second",
+      "title": "Judge the work by its worst second and its faces, hands and held props",
+      "summary": "Look closely at focal faces, hands, held props and contacts, the first and last second, and the planes you never described. A strong opening or a clean overview can hide melted keys, fused fingers, a source-like first half-second or a collapsing end.",
+      "questions": [
+        "Which part of the video should I inspect before accepting it?",
+        "Why did a good-looking candidate get marked down?",
+        "What do reviewers tend to miss?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "principle",
+      "evidence_ids": [
+        "EV-F006",
+        "EV-F006-v3-000112",
+        "EV-F001",
+        "EV-V5-LEGO-planes",
+        "EV-V5-train-cases"
+      ],
+      "stages": [
+        "inspect",
+        "deliver"
+      ],
+      "path": "knowledge/experience/curated/entries/P-worst-second.md",
+      "version": "1",
+      "sha256": "887d740792734574d47af629d877757cc6d840d171bbcaa47bc8abe5b0482ad0",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Judge the work by its worst second and its faces, hands and held props",
+        "Which part of the video should I inspect before accepting it?",
+        "Why did a good-looking candidate get marked down?",
+        "What do reviewers tend to miss?"
+      ],
+      "applicability": "Look closely at focal faces, hands, held props and contacts, the first and last second, and the planes you never described. A strong opening or a clean overview can hide melted keys, fused fingers, a source-like first half-second or a collapsing end.",
+      "recommendation": "Look closely at focal faces, hands, held props and contacts, the first and last second, and the planes you never described. A strong opening or a clean overview can hide melted keys, fused fingers, a source-like first half-second or a collapsing end."
+    },
+    {
+      "id": "EX-B-chain-drift",
+      "title": "Continuing from a candidate did not reliably help on Bernini; choose the input for what it still contains",
+      "summary": "On Bernini, five train-sample continuations from an earlier candidate moved stability by -1.0 to +1.1 with no consistent direction. Continue from a candidate only when it holds what you need next; otherwise restart from the source with a rewritten full prompt.",
+      "questions": [
+        "Should I continue from my last candidate or restart from the source?",
+        "Why did a repair make other things worse?",
+        "Which input keeps the information I need?"
+      ],
+      "renderers": [
+        "bernini"
+      ],
+      "layer": "renderer",
+      "evidence_ids": [
+        "EV-V5-train-cases",
+        "EV-batch-facts",
+        "EV-F002",
+        "EV-F003",
+        "EV-F004",
+        "EV-F006",
+        "EV-F007",
+        "EV-B-024-full"
+      ],
+      "stages": [
+        "revise"
+      ],
+      "path": "knowledge/experience/curated/entries/B-chain-drift.md",
+      "version": "1",
+      "sha256": "2bfac5f5c04038ec0f4cef79933e837d6f70bc183064f32b90c0b579c2bf8120",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Continuing from a candidate did not reliably help on Bernini; choose the input for what it still contains",
+        "Should I continue from my last candidate or restart from the source?",
+        "Why did a repair make other things worse?",
+        "Which input keeps the information I need?"
+      ],
+      "applicability": "On Bernini, five train-sample continuations from an earlier candidate moved stability by -1.0 to +1.1 with no consistent direction. Continue from a candidate only when it holds what you need next; otherwise restart from the source with a rewritten full prompt.",
+      "recommendation": "On Bernini, five train-sample continuations from an earlier candidate moved stability by -1.0 to +1.1 with no consistent direction. Continue from a candidate only when it holds what you need next; otherwise restart from the source with a rewritten full prompt."
+    },
+    {
+      "id": "EX-B-emission-binding",
+      "title": "Glow can attach to the nearest support instead of the intended edge",
+      "summary": "On Bernini, requested emission appeared under a table or on arches instead of on the intended perimeter. Describe the glowing edge and the unlit support as a contrast, and look at where the light lands.",
+      "questions": [
+        "Why does the glow appear on the wrong object?",
+        "How do I make only one edge emit light?"
+      ],
+      "renderers": [
+        "bernini"
+      ],
+      "layer": "renderer",
+      "evidence_ids": [
+        "EV-F004",
+        "EV-F007"
+      ],
+      "stages": [
+        "design",
+        "inspect"
+      ],
+      "path": "knowledge/experience/curated/entries/B-emission-binding.md",
+      "version": "1",
+      "sha256": "54398e246be981adf0e620422b75ecf8bf0a8f9767ff1a50db08a2dc9f809409",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Glow can attach to the nearest support instead of the intended edge",
+        "Why does the glow appear on the wrong object?",
+        "How do I make only one edge emit light?"
+      ],
+      "applicability": "On Bernini, requested emission appeared under a table or on arches instead of on the intended perimeter. Describe the glowing edge and the unlit support as a contrast, and look at where the light lands.",
+      "recommendation": "On Bernini, requested emission appeared under a table or on arches instead of on the intended perimeter. Describe the glowing edge and the unlit support as a contrast, and look at where the light lands."
+    },
+    {
+      "id": "EX-B-held-props",
+      "title": "Hands, held props and contact points are where heavy conversions break",
+      "summary": "Under heavy conversion Bernini softens fingers into keyboards, bends or reshapes carried objects, flips face prints between frames, and lets a prop detach from the hand. Describe the grip and the prop's rigid shape, and inspect them closely.",
+      "questions": [
+        "Why does the carried object bend or change shape?",
+        "Why do fingers merge into the keyboard or the headboard?",
+        "What should I specify to keep a grip clean?"
+      ],
+      "renderers": [
+        "bernini"
+      ],
+      "layer": "renderer",
+      "evidence_ids": [
+        "EV-V5-train-cases",
+        "EV-V5-LEGO-planes",
+        "EV-F001",
+        "EV-F006",
+        "EV-F006-v3-000112"
+      ],
+      "stages": [
+        "design",
+        "inspect"
+      ],
+      "path": "knowledge/experience/curated/entries/B-held-props.md",
+      "version": "1",
+      "sha256": "f4bcaa0dfc639c93692b0a5edd8a296bb643ceaf0117066fb29720150e1387bf",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Hands, held props and contact points are where heavy conversions break",
+        "Why does the carried object bend or change shape?",
+        "Why do fingers merge into the keyboard or the headboard?",
+        "What should I specify to keep a grip clean?"
+      ],
+      "applicability": "Under heavy conversion Bernini softens fingers into keyboards, bends or reshapes carried objects, flips face prints between frames, and lets a prop detach from the hand. Describe the grip and the prop's rigid shape, and inspect them closely.",
+      "recommendation": "Under heavy conversion Bernini softens fingers into keyboards, bends or reshapes carried objects, flips face prints between frames, and lets a prop detach from the hand. Describe the grip and the prop's rigid shape, and inspect them closely."
+    },
+    {
+      "id": "EX-B-identity-rebuild",
+      "title": "Bernini rebuilds a face from a long description of it",
+      "summary": "Detailed hair, age and glasses descriptions reconstructed different people on Bernini across several tasks, and heavy scene-wide rewrites did too. Keep identity wording short, favor a source that still shows the person, and check every person after each pass.",
+      "questions": [
+        "Why does the person look different after I described them in detail?",
+        "Which input recovers a lost face?",
+        "How do I keep several people recognizable?"
+      ],
+      "renderers": [
+        "bernini"
+      ],
+      "layer": "renderer",
+      "evidence_ids": [
+        "EV-F002",
+        "EV-F003",
+        "EV-F005",
+        "EV-F006",
+        "EV-V5-train-cases"
+      ],
+      "stages": [
+        "design",
+        "revise"
+      ],
+      "path": "knowledge/experience/curated/entries/B-identity-rebuild.md",
+      "version": "1",
+      "sha256": "addc0f3c8ed778ee2b508ab5dd317475279cef7592dd90a810970ee96d5de6b1",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Bernini rebuilds a face from a long description of it",
+        "Why does the person look different after I described them in detail?",
+        "Which input recovers a lost face?",
+        "How do I keep several people recognizable?"
+      ],
+      "applicability": "Detailed hair, age and glasses descriptions reconstructed different people on Bernini across several tasks, and heavy scene-wide rewrites did too. Keep identity wording short, favor a source that still shows the person, and check every person after each pass.",
+      "recommendation": "Detailed hair, age and glasses descriptions reconstructed different people on Bernini across several tasks, and heavy scene-wide rewrites did too. Keep identity wording short, favor a source that still shows the person, and check every person after each pass."
+    },
+    {
+      "id": "EX-B-partial-default",
+      "title": "Bernini converts what you describe and leaves the rest of the shot",
+      "summary": "Bernini can convert the subject while retaining photographic scenery, even when scenery was explicitly described. Cover the planes, then rework the construction and input support of the ones it still failed to realize.",
+      "questions": [
+        "Why is only my character converted?",
+        "Why does a plain request leave the background alone?",
+        "What does a preservation-heavy prompt cost?"
+      ],
+      "renderers": [
+        "bernini"
+      ],
+      "layer": "renderer",
+      "evidence_ids": [
+        "EV-V5-LEGO-planes",
+        "EV-V5-train-cases",
+        "EV-F004",
+        "EV-F005",
+        "EV-F006",
+        "EV-V5-case-reading"
+      ],
+      "stages": [
+        "design",
+        "inspect"
+      ],
+      "path": "knowledge/experience/curated/entries/B-partial-default.md",
+      "version": "2",
+      "sha256": "8ef97f78f6996d308ef92435d846e638182222ee583f3660e08dd82a90d61ad1",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md",
+      "aliases": [
+        "Bernini converts what you describe and leaves the rest of the shot",
+        "Why is only my character converted?",
+        "Why does a plain request leave the background alone?",
+        "What does a preservation-heavy prompt cost?"
+      ],
+      "applicability": "Bernini can convert the subject while retaining photographic scenery, even when scenery was explicitly described. Cover the planes, then rework the construction and input support of the ones it still failed to realize.",
+      "recommendation": "Bernini can convert the subject while retaining photographic scenery, even when scenery was explicitly described. Cover the planes, then rework the construction and input support of the ones it still failed to realize."
+    },
+    {
+      "id": "EX-B-text-budget",
+      "title": "The 512-token text limit makes every sentence compete",
+      "summary": "Bernini accepts 512 encoder tokens including its official prefix. Long preservation clauses use space that construction clauses need, and prompts over the limit are refused before any render.",
+      "questions": [
+        "How long can a Bernini prompt be?",
+        "What should I cut when the prompt is too long?",
+        "What happens when the prompt exceeds the limit?"
+      ],
+      "renderers": [
+        "bernini"
+      ],
+      "layer": "renderer",
+      "evidence_ids": [
+        "EV-V5-train-cases",
+        "EV-PE-token-limit",
+        "EV-H-B-benchmark__001__long"
+      ],
+      "stages": [
+        "design"
+      ],
+      "path": "knowledge/experience/curated/entries/B-text-budget.md",
+      "version": "2",
+      "sha256": "5fc49a31293cb0973cc88720ac43205a92da83f7bfad69033785e4fae4d6202a",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md",
+      "aliases": [
+        "The 512-token text limit makes every sentence compete",
+        "How long can a Bernini prompt be?",
+        "What should I cut when the prompt is too long?",
+        "What happens when the prompt exceeds the limit?"
+      ],
+      "applicability": "Bernini accepts 512 encoder tokens including its official prefix. Long preservation clauses use space that construction clauses need, and prompts over the limit are refused before any render.",
+      "recommendation": "Bernini accepts 512 encoder tokens including its official prefix. Long preservation clauses use space that construction clauses need, and prompts over the limit are refused before any render."
+    },
+    {
+      "id": "EX-D-env-strong-foreground-weak",
+      "title": "Ditto replaces settings strongly and tends to reconstruct people and shapes",
+      "summary": "In the historical Ditto runs, space-station walls and Earth views arrived early while faces and eyewear changed. Spend early attention on foreground identity and structure; do not escalate background instructions once the setting is already convincing.",
+      "questions": [
+        "Where does Ditto put its effort?",
+        "What should I specify first for Ditto?",
+        "Why did the setting work while the people changed?"
+      ],
+      "renderers": [
+        "ditto"
+      ],
+      "layer": "renderer",
+      "evidence_ids": [
+        "EV-D-FS4-full",
+        "EV-D-FS4-no",
+        "EV-renderer-profile-20261102"
+      ],
+      "stages": [
+        "design",
+        "inspect"
+      ],
+      "path": "knowledge/experience/curated/entries/D-env-strong-foreground-weak.md",
+      "version": "1",
+      "sha256": "5334a7c8c409c1d37ec5b087b202dc9392afa5074a516ae8ad7a274c7a58c80a",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Ditto replaces settings strongly and tends to reconstruct people and shapes",
+        "Where does Ditto put its effort?",
+        "What should I specify first for Ditto?",
+        "Why did the setting work while the people changed?"
+      ],
+      "applicability": "In the historical Ditto runs, space-station walls and Earth views arrived early while faces and eyewear changed. Spend early attention on foreground identity and structure; do not escalate background instructions once the setting is already convincing.",
+      "recommendation": "In the historical Ditto runs, space-station walls and Earth views arrived early while faces and eyewear changed. Spend early attention on foreground identity and structure; do not escalate background instructions once the setting is already convincing."
+    },
+    {
+      "id": "EX-D-shape-repair-adds",
+      "title": "On Ditto, a shape-repair pass can add an object instead of fixing one",
+      "summary": "A request to make a dome compact produced a second dome. For an important instance repair, anchor the existing object to its neighbors and footprint, or restart from an intact earlier input, rather than continuing to sculpt a duplicated one.",
+      "questions": [
+        "Why did my correction add another object?",
+        "How do I repair the shape of one object on Ditto?"
+      ],
+      "renderers": [
+        "ditto"
+      ],
+      "layer": "renderer",
+      "evidence_ids": [
+        "EV-D-027-full",
+        "EV-H-D-024__long__full_knowledge",
+        "EV-H-D-027__short__no_knowledge"
+      ],
+      "stages": [
+        "revise"
+      ],
+      "path": "knowledge/experience/curated/entries/D-shape-repair-adds.md",
+      "version": "1",
+      "sha256": "075f7e0001ce717852384a6dc229cf6c9d81c2c70d00e0d277d314303a8b7ec3",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "On Ditto, a shape-repair pass can add an object instead of fixing one",
+        "Why did my correction add another object?",
+        "How do I repair the shape of one object on Ditto?"
+      ],
+      "applicability": "A request to make a dome compact produced a second dome. For an important instance repair, anchor the existing object to its neighbors and footprint, or restart from an intact earlier input, rather than continuing to sculpt a duplicated one.",
+      "recommendation": "A request to make a dome compact produced a second dome. For an important instance repair, anchor the existing object to its neighbors and footprint, or restart from an intact earlier input, rather than continuing to sculpt a duplicated one."
+    },
+    {
+      "id": "EX-C-craft",
+      "title": "Craft and material worlds need a construction clause for every object",
+      "summary": "In a brick, paper, felt or cut-paper world the medium is made of pieces. A subject built from the material in a photographic scene reads as a collage; name how each plane is assembled from the material.",
+      "questions": [
+        "How do I recast into a physical material such as bricks, paper or felt?",
+        "Why does my character look like a toy placed in a real scene?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "condition",
+      "evidence_ids": [
+        "EV-V5-LEGO-planes",
+        "EV-V5-train-cases",
+        "EV-V5-case-reading"
+      ],
+      "families": [
+        "手工与材料"
+      ],
+      "stages": [
+        "design",
+        "inspect"
+      ],
+      "path": "knowledge/experience/curated/entries/C-craft.md",
+      "version": "2",
+      "sha256": "528baf49285db1fca9a1ca87459b1bd89c2209e1333667f5ee4fca0027944b61",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md",
+      "aliases": [
+        "Craft and material worlds need a construction clause for every object",
+        "How do I recast into a physical material such as bricks, paper or felt?",
+        "Why does my character look like a toy placed in a real scene?"
+      ],
+      "applicability": "In a brick, paper, felt or cut-paper world the medium is made of pieces. A subject built from the material in a photographic scene reads as a collage; name how each plane is assembled from the material.",
+      "recommendation": "In a brick, paper, felt or cut-paper world the medium is made of pieces. A subject built from the material in a photographic scene reads as a collage; name how each plane is assembled from the material."
+    },
+    {
+      "id": "EX-C-film-world",
+      "title": "Film-world recasts: the setting is easy, the people are where it fails",
+      "summary": "In recasts into a film's production design, the environment converted readily. The failures in the train evidence were on the people: replaced, left in source look as cut-outs, or mismatched in light.",
+      "questions": [
+        "The set is convincing but the people are wrong. Where did it fail?",
+        "How do I recast into a film's world without replacing the people?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "condition",
+      "evidence_ids": [
+        "EV-V5-train-cases",
+        "EV-F001",
+        "EV-F003",
+        "EV-F005",
+        "EV-D-FS4-full"
+      ],
+      "families": [
+        "电影与影视世界"
+      ],
+      "stages": [
+        "design",
+        "inspect"
+      ],
+      "path": "knowledge/experience/curated/entries/C-film-world.md",
+      "version": "1",
+      "sha256": "8f93e1f159661d9116bf3153930a3631c61c9638fb61711c67b9fceac72afaff",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md",
+      "aliases": [
+        "Film-world recasts: the setting is easy, the people are where it fails",
+        "The set is convincing but the people are wrong. Where did it fail?",
+        "How do I recast into a film's world without replacing the people?"
+      ],
+      "applicability": "In recasts into a film's production design, the environment converted readily. The failures in the train evidence were on the people: replaced, left in source look as cut-outs, or mismatched in light.",
+      "recommendation": "In recasts into a film's production design, the environment converted readily. The failures in the train evidence were on the people: replaced, left in source look as cut-outs, or mismatched in light."
+    },
+    {
+      "id": "EX-C-hand-drawn",
+      "title": "Carry historical drawing evidence into new medium-specific tasks",
+      "summary": "Use the historical etching and storybook evidence for concrete medium construction. Current anime, painting and comic families still need v5 training comparisons; transfer the construction relationship and choose the marks for the requested medium.",
+      "questions": [
+        "Is there guidance for anime, painting or comic worlds?",
+        "What should I check first in a drawn or painted medium?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "condition",
+      "evidence_ids": [
+        "EV-H-B-027__short__full_knowledge",
+        "EV-H-B-041__short__full_knowledge",
+        "EV-historical-score-extract",
+        "EV-semantic-goal-review"
+      ],
+      "families": [
+        "日漫与手绘动画",
+        "绘画与版画",
+        "欧美动画与漫画"
+      ],
+      "stages": [
+        "design",
+        "inspect"
+      ],
+      "path": "knowledge/experience/curated/entries/C-hand-drawn.md",
+      "version": "2",
+      "sha256": "0f0d1bd8cee58015f44fd7066301196bb077d04dddd3e0f0c94bf60ac25bd44d",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md",
+      "aliases": [
+        "Carry historical drawing evidence into new medium-specific tasks",
+        "Is there guidance for anime, painting or comic worlds?",
+        "What should I check first in a drawn or painted medium?"
+      ],
+      "applicability": "Use the historical etching and storybook evidence for concrete medium construction. Current anime, painting and comic families still need v5 training comparisons; transfer the construction relationship and choose the marks for the requested medium.",
+      "recommendation": "Use the historical etching and storybook evidence for concrete medium construction. Current anime, painting and comic families still need v5 training comparisons; transfer the construction relationship and choose the marks for the requested medium."
+    },
+    {
+      "id": "EX-C-long",
+      "title": "Long requests list many details; carry the ones that define the world, within the text limit",
+      "summary": "A long request names planes, costume, light and a camera behavior. Carry them in order of what makes the world recognizable, and check each named item in the delivered video, because a long list can exceed what one prompt carries.",
+      "questions": [
+        "The request lists many details. Do I need to carry them all?",
+        "How do I check a long request against the result?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "condition",
+      "evidence_ids": [
+        "EV-V5-train-cases",
+        "EV-V5-LEGO-planes",
+        "EV-PE-token-limit",
+        "EV-V5-case-reading"
+      ],
+      "tracks": [
+        "long"
+      ],
+      "stages": [
+        "design",
+        "inspect",
+        "deliver"
+      ],
+      "path": "knowledge/experience/curated/entries/C-long.md",
+      "version": "2",
+      "sha256": "72053e7c8b75cfa3b302b07a72d259337e392d984a454e8099ff337a188a0c14",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md",
+      "aliases": [
+        "Long requests list many details; carry the ones that define the world, within the text limit",
+        "The request lists many details. Do I need to carry them all?",
+        "How do I check a long request against the result?"
+      ],
+      "applicability": "A long request names planes, costume, light and a camera behavior. Carry them in order of what makes the world recognizable, and check each named item in the delivered video, because a long list can exceed what one prompt carries.",
+      "recommendation": "A long request names planes, costume, light and a camera behavior. Carry them in order of what makes the world recognizable, and check each named item in the delivered video, because a long list can exceed what one prompt carries."
+    },
+    {
+      "id": "EX-C-short",
+      "title": "Short requests need a source-specific realization of the target world",
+      "summary": "For a short request, anchor the target in the source's distinctive spatial relationships. When a detailed prompt still produces a generic scene, revise the discriminating geometry and staging rather than merely making the prompt longer.",
+      "questions": [
+        "The request is one sentence. What do I have to add?",
+        "Why did a short-prompt result keep the theme but lose the scene?"
+      ],
+      "renderers": [
+        "bernini",
+        "ditto"
+      ],
+      "layer": "condition",
+      "evidence_ids": [
+        "EV-V5-train-cases",
+        "EV-V5-case-reading"
+      ],
+      "tracks": [
+        "short"
+      ],
+      "stages": [
+        "design",
+        "inspect"
+      ],
+      "path": "knowledge/experience/curated/entries/C-short.md",
+      "version": "2",
+      "sha256": "ea5d49edfd6695f7130657811a54b8946ff097e02dbb44d21627eae4794958dc",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md",
+      "aliases": [
+        "Short requests need a source-specific realization of the target world",
+        "The request is one sentence. What do I have to add?",
+        "Why did a short-prompt result keep the theme but lose the scene?"
+      ],
+      "applicability": "For a short request, anchor the target in the source's distinctive spatial relationships. When a detailed prompt still produces a generic scene, revise the discriminating geometry and staging rather than merely making the prompt longer.",
+      "recommendation": "For a short request, anchor the target in the source's distinctive spatial relationships. When a detailed prompt still produces a generic scene, revise the discriminating geometry and staging rather than merely making the prompt longer."
+    }
+  ],
+  "resources": [
+    {
+      "id": "EV-B-003",
+      "title": "B 003",
+      "path": "knowledge/experience/curated/evidence/B-003.json",
+      "version": "1",
+      "sha256": "d70760bd0c3dbe4d648e346390390447fce00554b1c9c0f88aa66e381cdeb8c0",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-B-024-full",
+      "title": "B 024 full",
+      "path": "knowledge/experience/curated/evidence/B-024-full.json",
+      "version": "1",
+      "sha256": "90c212cdefcef2ba9381fb63e7510dce973d65262e25a7aa189a15aad8e74434",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-B-FS4-full",
+      "title": "B FS4 full",
+      "path": "knowledge/experience/curated/evidence/B-FS4-full.json",
+      "version": "1",
+      "sha256": "82e58e829410de19af0123609625e288a70bbf33b0528785444ba38116434992",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-D-027-full",
+      "title": "D 027 full",
+      "path": "knowledge/experience/curated/evidence/D-027-full.json",
+      "version": "1",
+      "sha256": "b38e80d04494ef6500be5472254bca7bc2eb5d7bbb66eac79e9579f2500bc388",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-D-FS4-full",
+      "title": "D FS4 full",
+      "path": "knowledge/experience/curated/evidence/D-FS4-full.json",
+      "version": "1",
+      "sha256": "0190a423004cc3552a378188983975dc23768ec8077e4081514c6e4910540d69",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-D-FS4-no",
+      "title": "D FS4 no",
+      "path": "knowledge/experience/curated/evidence/D-FS4-no.json",
+      "version": "1",
+      "sha256": "ca3aaf25de303e9cace72e93e3dc67bb98ed0399ef2cd4caba161f66ce6eee2a",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F001",
+      "title": "F001",
+      "path": "knowledge/experience/curated/evidence/F001.json",
+      "version": "1",
+      "sha256": "a9ab324c4c667434afac7809cbfb11374777080a7e4f0c76306fb2753428625c",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F002",
+      "title": "F002",
+      "path": "knowledge/experience/curated/evidence/F002.json",
+      "version": "1",
+      "sha256": "3999fe93e7330bf91a603c93ad6f4719f21238ccd5c9809d71966315bfd1e2b0",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F003",
+      "title": "F003",
+      "path": "knowledge/experience/curated/evidence/F003.json",
+      "version": "1",
+      "sha256": "afa8f4dc88207e3236efe407dad456819cdd8c571db3a7fcef559542069e4fc8",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F004",
+      "title": "F004",
+      "path": "knowledge/experience/curated/evidence/F004.json",
+      "version": "1",
+      "sha256": "8aeb640113f5a42547356fa57cc26f4bcc94e32f902dc6101969efc225f132c1",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F005",
+      "title": "F005",
+      "path": "knowledge/experience/curated/evidence/F005.json",
+      "version": "1",
+      "sha256": "4d2352532ba75002fdf0cbbb8606181950ccd3556d2584b06a2c81cfd8862ac4",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F006",
+      "title": "F006",
+      "path": "knowledge/experience/curated/evidence/F006.json",
+      "version": "1",
+      "sha256": "29210dde452dbc2d4dff48bc0d24d0385a7461ff003eb0351cdcf83016e5b722",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F007",
+      "title": "F007",
+      "path": "knowledge/experience/curated/evidence/F007.json",
+      "version": "1",
+      "sha256": "81def8a8928b22b4a34b4a93fd439cb05133c760f0903ac26023c4932bb6b89f",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-B-024__long__full_knowledge",
+      "title": "H B 024__long__full_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-B-024__long__full_knowledge.json",
+      "version": "1",
+      "sha256": "c82f32ee6512ab97ae39835c305ac8f76cbacdb57cf113984a3ac6a9fa1bf4bd",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-B-024__long__no_knowledge",
+      "title": "H B 024__long__no_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-B-024__long__no_knowledge.json",
+      "version": "1",
+      "sha256": "f725490eae5eec18ab2e31c7a7e019a317b4d46a395997ae6b1087e8555f3d3f",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-B-027__short__full_knowledge",
+      "title": "H B 027__short__full_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-B-027__short__full_knowledge.json",
+      "version": "1",
+      "sha256": "99614b89e4b20cdac803ec95a5b42978e27bea0dece2dca32ece60f07049793f",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-B-027__short__no_knowledge",
+      "title": "H B 027__short__no_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-B-027__short__no_knowledge.json",
+      "version": "1",
+      "sha256": "890d47883a48a13760843b88e73d6046a05bc73d25317ae85f9aef811d024d33",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-B-041__short__full_knowledge",
+      "title": "H B 041__short__full_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-B-041__short__full_knowledge.json",
+      "version": "1",
+      "sha256": "3a96f31d1b2a56de410e7fcddad5f3061c372d6732b6d4bbdf798fe563ccd080",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-B-041__short__no_knowledge",
+      "title": "H B 041__short__no_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-B-041__short__no_knowledge.json",
+      "version": "1",
+      "sha256": "36455cc121d32d44c9f345e47ec0ed77e598e8b867a8c74b3040bc8820cf9292",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-B-benchmark__001__long",
+      "title": "H B benchmark__001__long",
+      "path": "knowledge/experience/curated/evidence/H-B-benchmark__001__long.json",
+      "version": "1",
+      "sha256": "3dceed984845999d5fa7f876ffac9bc3e9557b6932b4c15cd5aa4098265b988e",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-B-benchmark__001__short",
+      "title": "H B benchmark__001__short",
+      "path": "knowledge/experience/curated/evidence/H-B-benchmark__001__short.json",
+      "version": "1",
+      "sha256": "ac6189a35f312523cae9dbd3f1ad5a4ffd27b6be914e3eec7a4ae56378eb2acc",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-B-benchmark__003__short",
+      "title": "H B benchmark__003__short",
+      "path": "knowledge/experience/curated/evidence/H-B-benchmark__003__short.json",
+      "version": "1",
+      "sha256": "acf4a13ea2dcda8faa688a0b58f95edd5e4ec4f9b3056e7e630a7cf9babda782",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-B-fewshot_004__long__full_knowledge",
+      "title": "H B fewshot_004__long__full_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-B-fewshot_004__long__full_knowledge.json",
+      "version": "1",
+      "sha256": "d88853f6bbc2934c38cfb7745398179455316704814a784e9e02d9ba6f7d7254",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-B-fewshot_004__long__no_knowledge",
+      "title": "H B fewshot_004__long__no_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-B-fewshot_004__long__no_knowledge.json",
+      "version": "1",
+      "sha256": "5ca403db23fd7724d7d69544c67ab8183e8bc451a3374a27eb1b70f53d6d90b5",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-024__long__full_knowledge",
+      "title": "H D 024__long__full_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-D-024__long__full_knowledge.json",
+      "version": "1",
+      "sha256": "501d66918bf23b3ed319e390407c8057dfcd9710062a442c3b64344b88a4109b",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-024__long__no_knowledge",
+      "title": "H D 024__long__no_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-D-024__long__no_knowledge.json",
+      "version": "1",
+      "sha256": "641c3f37ce906ec7b59eadb2f535e772dc00257f235c170aa96aa28416e1e31f",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-027__short__full_knowledge",
+      "title": "H D 027__short__full_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-D-027__short__full_knowledge.json",
+      "version": "1",
+      "sha256": "767a0f4efca7880a5bc446f9e71929abdfe361e141d34b1f93c63df242e75264",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-027__short__no_knowledge",
+      "title": "H D 027__short__no_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-D-027__short__no_knowledge.json",
+      "version": "1",
+      "sha256": "6c2635849a835ad60974d925627b7d94a480d02d46bfa3d848e6a90cf8269911",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-041__short__full_knowledge",
+      "title": "H D 041__short__full_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-D-041__short__full_knowledge.json",
+      "version": "1",
+      "sha256": "412db4e3ba1f5b35ebd6e53e093a2d7071bf5aec5fdc4808fafc24f13d9fb231",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-041__short__no_knowledge",
+      "title": "H D 041__short__no_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-D-041__short__no_knowledge.json",
+      "version": "1",
+      "sha256": "93a54f887e085aa4016b64549bb490c2cc3bbeb155b2b6fa017ceb8f6f8d141d",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-benchmark__001__long",
+      "title": "H D benchmark__001__long",
+      "path": "knowledge/experience/curated/evidence/H-D-benchmark__001__long.json",
+      "version": "1",
+      "sha256": "5883c4cddcebc0cc3990b3d5020f17a95de7b735c12a5ad0cc3c47633ab56dd3",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-benchmark__001__short",
+      "title": "H D benchmark__001__short",
+      "path": "knowledge/experience/curated/evidence/H-D-benchmark__001__short.json",
+      "version": "1",
+      "sha256": "3b68c49ab1e1217f5763644a467e148bc08dd6838687387f8d5f4c40eebed5dd",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-benchmark__003__long",
+      "title": "H D benchmark__003__long",
+      "path": "knowledge/experience/curated/evidence/H-D-benchmark__003__long.json",
+      "version": "1",
+      "sha256": "a87c1626548372bbb2d2e97b4b6e0963bc55653a53c72563ea096fea80028ad4",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-benchmark__003__short",
+      "title": "H D benchmark__003__short",
+      "path": "knowledge/experience/curated/evidence/H-D-benchmark__003__short.json",
+      "version": "1",
+      "sha256": "b64b3a9edff96b7395f090b13bceca7bacd51185619557e6d9e1bb2acd85e889",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-fewshot_004__long__full_knowledge",
+      "title": "H D fewshot_004__long__full_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-D-fewshot_004__long__full_knowledge.json",
+      "version": "1",
+      "sha256": "e913bba974654862ece82b62f55890110a5a65f1e404f31e7e7fc826177f7fa0",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-H-D-fewshot_004__long__no_knowledge",
+      "title": "H D fewshot_004__long__no_knowledge",
+      "path": "knowledge/experience/curated/evidence/H-D-fewshot_004__long__no_knowledge.json",
+      "version": "1",
+      "sha256": "950e5220b28bd2b37de94075d1c92c5c9277d01ea98d0fa984372435ad370024",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-README",
+      "title": "README",
+      "path": "knowledge/experience/curated/evidence/README.md",
+      "version": "2",
+      "sha256": "a7ff35aec7ce6b99eb19c4c25e5db6760a7021dc5d9442d8336a862a57057905",
+      "review_status": "approved",
+      "review_reference": "docs/semantic-experience-revision-plan-20261102.md#intended-change"
+    },
+    {
+      "id": "EV-batch-facts",
+      "title": "batch facts",
+      "path": "knowledge/experience/curated/evidence/batch-facts.json",
+      "version": "1",
+      "sha256": "ccb16369a93c766e9f1810c88bf293c90854724b041a578fded1ce9333a4a00f",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-batch-manifest",
+      "title": "batch manifest",
+      "path": "knowledge/experience/curated/evidence/batch-manifest.json",
+      "version": "1",
+      "sha256": "672a455244611283c749c6d10fd85b9b756ad39422c1a9db59e1866705b446a5",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-fewshot-sources",
+      "title": "fewshot sources",
+      "path": "knowledge/experience/curated/evidence/fewshot-sources.json",
+      "version": "1",
+      "sha256": "17d75e653ab19cc3502baf8affe3b6bef19f08e0e10cbeecd496ded8a9f26516",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-frame-provenance",
+      "title": "frame provenance",
+      "path": "knowledge/experience/curated/evidence/frame-provenance.json",
+      "version": "1",
+      "sha256": "6b68b47f9313bbcc52e824795025e5f2cff82c492ea5ba0a9dba4abdd409a1f5",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F003-source-000000",
+      "title": "F003 source 000000",
+      "path": "knowledge/experience/curated/evidence/frames/F003-source-000000.jpg",
+      "version": "1",
+      "sha256": "1f23422b969edd34b30681e9c3a588aba229b3097e3e7055000bf9f357e27672",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F003-v1-000000",
+      "title": "F003 v1 000000",
+      "path": "knowledge/experience/curated/evidence/frames/F003-v1-000000.jpg",
+      "version": "1",
+      "sha256": "d75834a0720cd380868ecd2600a115e946c91785b1e8a451880b6a7d40313cc4",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F003-v2-000000",
+      "title": "F003 v2 000000",
+      "path": "knowledge/experience/curated/evidence/frames/F003-v2-000000.jpg",
+      "version": "1",
+      "sha256": "310def045adb338e41b0ed93cfa64dd97cbc3241c6dbf7b25569eec737b5f778",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F005-source-000000",
+      "title": "F005 source 000000",
+      "path": "knowledge/experience/curated/evidence/frames/F005-source-000000.jpg",
+      "version": "1",
+      "sha256": "ed47c6077ad795a3f43183de9350c4a4d08354bccffb9d6d7a16848cb54e523f",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F005-v1-000000",
+      "title": "F005 v1 000000",
+      "path": "knowledge/experience/curated/evidence/frames/F005-v1-000000.jpg",
+      "version": "1",
+      "sha256": "a4cc4217ec3dfb211e3e25bf665d5b127e838ca2379714d3ec5735050d493daa",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F005-v2-000000",
+      "title": "F005 v2 000000",
+      "path": "knowledge/experience/curated/evidence/frames/F005-v2-000000.jpg",
+      "version": "1",
+      "sha256": "bc21e7e67904b9d3d6a18b987e6d381140778140e4c83ccb672d28ac7c5e8fd7",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F006-v3-000000",
+      "title": "F006 v3 000000",
+      "path": "knowledge/experience/curated/evidence/frames/F006-v3-000000.jpg",
+      "version": "1",
+      "sha256": "296126a5fde6016931ed0dba9276d8cb3c4364c7d795afa6c1c0c2f51297c4b3",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-F006-v3-000112",
+      "title": "F006 v3 000112",
+      "path": "knowledge/experience/curated/evidence/frames/F006-v3-000112.jpg",
+      "version": "1",
+      "sha256": "904b385854ef871af4f8123fb3b3b7fd8e901f9411f5c76ed68f8947f3781f3a",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-historical-score-extract",
+      "title": "historical score extract",
+      "path": "knowledge/experience/curated/evidence/historical-score-extract.md",
+      "version": "1",
+      "sha256": "a97685a8592fd705494ef0379aed6e324b5caf7074483c6a70c91282da28008c",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-historical-sources",
+      "title": "historical sources",
+      "path": "knowledge/experience/curated/evidence/historical-sources.json",
+      "version": "1",
+      "sha256": "85d68766f1157ad97b836b4269a65197b83d4604c20a6970605f1a7defc5cb4d",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-usage-audit",
+      "title": "usage audit",
+      "path": "knowledge/experience/curated/evidence/usage-audit.json",
+      "version": "1",
+      "sha256": "1f8d68156c7d0cab88934482c8d893aa18188a7cc07fd779a9ee99da96071e91",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-visual-inspection",
+      "title": "visual inspection",
+      "path": "knowledge/experience/curated/evidence/visual-inspection.md",
+      "version": "1",
+      "sha256": "ab0f5fbf31a7508f4bf3002e02c9a13b71439364b2ff86ce8eb3c7d44b9dd9d0",
+      "review_status": "approved",
+      "review_reference": "docs/creative-fewshot-three-arm-plan.md#experimental-contract"
+    },
+    {
+      "id": "EV-semantic-goal-review",
+      "title": "Goal interpretation and inherited preservation commitments",
+      "path": "knowledge/experience/curated/evidence/semantic-goal-review-20261102.md",
+      "version": "1",
+      "review_status": "approved",
+      "review_reference": "docs/semantic-experience-revision-plan-20261102.md#intended-change",
+      "sha256": "6242bcd1e33a277b9c3d228fa4482673f9c3eaf6ee77aa8aaa17dbc61c2cbdba"
+    },
+    {
+      "id": "EV-F001-creative-first",
+      "title": "Later F001 first decision and preceding knowledge reads",
+      "path": "knowledge/experience/curated/evidence/creative-F001-first-decision.json",
+      "version": "1",
+      "review_status": "approved",
+      "review_reference": "docs/semantic-experience-revision-plan-20261102.md#intended-change",
+      "sha256": "6e3c514a553f25030064e6fd8eef0a445679e2e17f293b363f6ebf3d5a403067"
+    },
+    {
+      "id": "EV-renderer-profile-20261102",
+      "title": "Historical renderer profiles and recorded setups (2026-11-02)",
+      "path": "knowledge/experience/curated/evidence/renderer-profile-20261102.md",
+      "version": "1",
+      "sha256": "627d14d9e31fdd0acd8c1c4558f41aff3878c98e5e3a4a7a592b075ca42ac90a",
+      "review_status": "approved",
+      "review_reference": "docs/experience-system-refactor-20261103.md"
+    },
+    {
+      "id": "EV-V5-LEGO-planes",
+      "title": "Brick-world case: planes converted and not converted",
+      "path": "knowledge/experience/curated/evidence/v5-lego-planes.md",
+      "version": "2",
+      "sha256": "0ec86435967ea046237a78554ed71a242a689a9eb6b832a44ed292496dee47ed",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-train-cases",
+      "title": "v5 scores and reasons for train-split cases",
+      "path": "knowledge/experience/curated/evidence/v5-train-cases.json",
+      "version": "2",
+      "sha256": "fee8eca5c4326730f103e574c9bc7ce14019d0d73daadc889e34aed21b9289b0",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-PE-token-limit",
+      "title": "PE prompts refused for length",
+      "path": "knowledge/experience/curated/evidence/pe-token-limit.md",
+      "version": "1",
+      "sha256": "e6c054a731545cb19705d34d06b4ef15def7548fe5c881d6b01928824c9aa978",
+      "review_status": "approved",
+      "review_reference": "docs/experience-rebuild-20261103.md"
+    },
+    {
+      "id": "EV-V5-001-short-comparison",
+      "title": "001 short: source and candidate comparison, six sampled times",
+      "path": "knowledge/experience/curated/evidence/frames/v5-001-short-comparison.jpg",
+      "version": "1",
+      "sha256": "d01bc30197d88b1aa509cc6720dc4ceb09c6601d3695dd632468fb770b2474c3",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-001-short-case",
+      "title": "001 short: exact prompts, inputs and full saved v5 reasons",
+      "path": "knowledge/experience/curated/evidence/v5-001-short-case.json",
+      "version": "1",
+      "sha256": "9e44479da6e4445d595b5e675db479341b7b16222f2fbadb19af8cd5eec410e8",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-001-long-comparison",
+      "title": "001 long: source and candidate comparison, six sampled times",
+      "path": "knowledge/experience/curated/evidence/frames/v5-001-long-comparison.jpg",
+      "version": "1",
+      "sha256": "30d0cf71eff260e2f94c1dd31aac683327ae9947ab7294ccc69698145ff02e60",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-001-long-case",
+      "title": "001 long: exact prompts, inputs and full saved v5 reasons",
+      "path": "knowledge/experience/curated/evidence/v5-001-long-case.json",
+      "version": "1",
+      "sha256": "66d91b8d98f5e41391b618f188bfdfe75a7d5be2ac01d9d3111b5559463f6053",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-005-short-comparison",
+      "title": "005 short: source and candidate comparison, six sampled times",
+      "path": "knowledge/experience/curated/evidence/frames/v5-005-short-comparison.jpg",
+      "version": "1",
+      "sha256": "b95e1c721e7bcbec08b441ca65230ac7e13bf0478e2eabc5e9a00dd921b131b2",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-005-short-case",
+      "title": "005 short: exact prompts, inputs and full saved v5 reasons",
+      "path": "knowledge/experience/curated/evidence/v5-005-short-case.json",
+      "version": "1",
+      "sha256": "3549b96f243d20662758c1764a71a409fb0260610102f9c5d8c942ebb97a026d",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-005-long-comparison",
+      "title": "005 long: source and candidate comparison, six sampled times",
+      "path": "knowledge/experience/curated/evidence/frames/v5-005-long-comparison.jpg",
+      "version": "1",
+      "sha256": "1d6f1546801922a1c8a9d91571210b9a610fd087526e582d9c32ae9056ef717b",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-005-long-case",
+      "title": "005 long: exact prompts, inputs and full saved v5 reasons",
+      "path": "knowledge/experience/curated/evidence/v5-005-long-case.json",
+      "version": "1",
+      "sha256": "dba5713551b3ded9624697b2ba2fb9ec7aac0e85b81d6f22eea9b7ffd8cce3d8",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-026-short-comparison",
+      "title": "026 short: source and candidate comparison, six sampled times",
+      "path": "knowledge/experience/curated/evidence/frames/v5-026-short-comparison.jpg",
+      "version": "1",
+      "sha256": "b005200022016a53045c194fb2609582c1bae0f70eeade11900ad258761345f5",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-026-short-case",
+      "title": "026 short: exact prompts, inputs and full saved v5 reasons",
+      "path": "knowledge/experience/curated/evidence/v5-026-short-case.json",
+      "version": "1",
+      "sha256": "c5df223c940b32f408fda3b76845f1fab92fb29a39cc1c8c2bfe93c047649aee",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-026-long-comparison",
+      "title": "026 long: source and candidate comparison, six sampled times",
+      "path": "knowledge/experience/curated/evidence/frames/v5-026-long-comparison.jpg",
+      "version": "1",
+      "sha256": "6df391ec46fb05f32009f3477ba36f4b9d254825a0074c45ae94dbccb693b895",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-026-long-case",
+      "title": "026 long: exact prompts, inputs and full saved v5 reasons",
+      "path": "knowledge/experience/curated/evidence/v5-026-long-case.json",
+      "version": "1",
+      "sha256": "a2610fd17e4fb5f0bda35185a0b1dea5c591386c5901813f5663634df3d5ac76",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-steady-original-cases",
+      "title": "Original 002/011 steady-train observations with full saved reasons",
+      "path": "knowledge/experience/curated/evidence/v5-steady-original-cases.json",
+      "version": "1",
+      "sha256": "8afda67c215effc6b92d827252f23109e01084babbaed9b232177a663426dce5",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EV-V5-case-reading",
+      "title": "Read exact interventions and full saved v5 evidence",
+      "path": "knowledge/experience/curated/evidence/v5-case-reading.md",
+      "version": "1",
+      "sha256": "27b7bbd2b927627df22e95b47a57429f4ed283ecbe56f84bdf5183d0d771ed23",
+      "review_status": "approved",
+      "review_reference": "docs/experience-content-correction-20261103.md"
+    },
+    {
+      "id": "EX-renderer-profiles",
+      "title": "Renderer entrances",
+      "path": "knowledge/experience/curated/renderers.md",
+      "version": "derived-286c7ed9c16c9864",
+      "sha256": "286c7ed9c16c9864befd7886c4f03edadc76de61881386eaed0b3173f822baad",
+      "review_status": "approved",
+      "review_reference": "Derived from canonical entry metadata"
+    }
+  ]
+}

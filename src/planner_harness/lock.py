@@ -1,0 +1,50 @@
+"""Process-scoped run lock, released by the OS after interruption."""
+import os
+import hashlib
+import tempfile
+import time
+from pathlib import Path
+
+
+class RunLock:
+    def __init__(self, output, *, timeout=0):
+        if timeout < 0:
+            raise ValueError("Lock timeout must be nonnegative")
+        self.timeout = timeout
+        output = Path(output).resolve()
+        # Windows byte-range locking is unsupported on some WSL UNC shares.
+        # Keep its OS-released lock on the local host; Linux uses flock in the run.
+        if os.name == "nt":
+            key = str(output).lower().replace("\\\\wsl$\\", "\\\\wsl.localhost\\")
+            self.path = Path(tempfile.gettempdir()) / "recast-planner-locks" / (hashlib.sha256(key.encode()).hexdigest() + ".lock")
+        else:
+            self.path = output / ".run.lock"
+
+    def __enter__(self):
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        self.file = self.path.open("a+b")
+        self.file.seek(0, 2)
+        if self.file.tell() == 0:
+            self.file.write(b"0")
+            self.file.flush()
+        self.file.seek(0)
+        deadline = time.monotonic() + self.timeout
+        while True:
+            try:
+                if os.name == "nt":
+                    import msvcrt
+                    msvcrt.locking(self.file.fileno(), msvcrt.LK_NBLCK, 1)
+                else:
+                    import fcntl
+                    fcntl.flock(self.file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+                break
+            except OSError:
+                remaining = deadline - time.monotonic()
+                if remaining <= 0:
+                    self.file.close()
+                    raise RuntimeError("This run is already owned by another process") from None
+                time.sleep(min(.1, remaining))
+        return self
+
+    def __exit__(self, *_):
+        self.file.close()

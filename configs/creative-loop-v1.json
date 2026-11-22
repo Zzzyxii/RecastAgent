@@ -1,0 +1,38 @@
+{
+  "workflow": "creative_loop_v1",
+  "planner": {
+    "model": "openai/gpt-6-luna",
+    "reasoning_effort": "high"
+  },
+  "critic": {
+    "model": "openai/gpt-6-luna",
+    "reasoning_effort": "high"
+  },
+  "completion_mode": "delivery",
+  "max_generations": 4,
+  "max_turns": null,
+  "continuation_policy": {
+    "version": "creative-continuation-v5",
+    "hard_generation_limit": 4,
+    "completion_policy": "fixed_generation_budget"
+  },
+  "experiments": "awaiting_user_start_two_gpu_loop",
+  "review": {
+    "mode": "critic"
+  },
+  "models": {
+    "planner": {
+      "factory": "vlm.openrouter:OpenRouterVisionModel",
+      "options": {
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
+    },
+    "online_critic": {
+      "factory": "vlm.openrouter:OpenRouterVisionModel",
+      "options": {
+        "api_key_env": "OPENROUTER_API_KEY"
+      }
+    }
+  },
+  "resource_policy": {}
+}

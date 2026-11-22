@@ -1,0 +1,27 @@
+{
+  "schema": "recast-frozen-card-source-migrations-v1",
+  "migrations": [
+    {
+      "card": "examples/evaluation/041_short.card.json",
+      "card_sha256": "b03953ae9f4e175bc0687e7ae231fd93773dc0df5aff099b2ab694a7b7308d06",
+      "from": "benchmark_data/main/041/041.mp4",
+      "to": "benchmark_data/train/020/video.mp4",
+      "source_sha256": "0827440a591d46aafc9fd410e4f8f3ec4b2de02f2f04a59877d99479752c57ca",
+      "original_file_sha256": "90fd3e2fe536f8c6c754fcd8157c480558de5471493268b5be03582b033306c7",
+      "original_git_revision": "c431ce67827aad1f355ed10eec7f1b8f31f56c53",
+      "original_git_blob": "45fc045c7ab5d8aff24de093e2be161be08e7d4e",
+      "reason": "Authorized benchmark path migration; historical card content and signature retained"
+    },
+    {
+      "card": "examples/evaluation/041_long.card.json",
+      "card_sha256": "768557fee5106ac84b032f67eb9d713f05fe27d46fe012879881531243fe2138",
+      "from": "benchmark_data/main/041/041.mp4",
+      "to": "benchmark_data/train/020/video.mp4",
+      "source_sha256": "0827440a591d46aafc9fd410e4f8f3ec4b2de02f2f04a59877d99479752c57ca",
+      "original_file_sha256": "b1ae8bb2fc8dab549c937f64510b52ff6fcb5b01e06e0df22dfaf1e4c0dedbc2",
+      "original_git_revision": "c431ce67827aad1f355ed10eec7f1b8f31f56c53",
+      "original_git_blob": "26cbbbdbbc85012f5dba014624694378756caa76",
+      "reason": "Authorized benchmark path migration; historical card content and signature retained"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "recast-experiment-campaign-v5",
+  "max_generations": 4,
+  "prompt_forms": [
+    "short",
+    "long"
+  ],
+  "seed_start": 42,
+  "seed_step": 1,
+  "model": "openai/gpt-6-luna",
+  "reasoning_effort": "high",
+  "evaluation_id": "all67-critic-v2",
+  "reuse_direct_results": "out/benchmark_results",
+  "maintenance": {
+    "enabled": true,
+    "automatic_phase": "after_each_training_task",
+    "publish": false,
+    "wall_seconds": 1800,
+    "model_calls": 32,
+    "tokens": 2000000,
+    "attempts": 2
+  },
+  "pe_max_generations": 4,
+  "rsi_partition": {
+    "train_count": 40,
+    "test_count": 27
+  },
+  "task_budget": {
+    "generation_seconds": {
+      "bernini": 1200,
+      "ditto": 2400
+    },
+    "tokens_per_generation": 1000000,
+    "headroom_generations": 0.5
+  }
+}

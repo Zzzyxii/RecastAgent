@@ -1,0 +1,2 @@
+# Add to the existing model-client environment; no GPU evaluator is required.
+-r requirements.planner.txt
