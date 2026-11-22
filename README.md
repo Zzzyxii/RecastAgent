@@ -1,6 +1,24 @@
-# RecastAgent
+<p align="center">
+  <img src="assets/banner.jpg" width="100%" alt="RecastAgent: What to Change, What to Keep — Experience-Evolving Agents for Video Recasting">
+</p>
 
-**What to Change, What to Keep: Experience-Evolving Agents for Video Recasting**
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white" alt="Python 3.11+">
+  <img src="https://img.shields.io/badge/training--free-frozen%20weights-2E7D32" alt="Training-free">
+  <img src="https://img.shields.io/badge/editors-Bernini%20%7C%20Ditto-E0A030" alt="Editors: Bernini, Ditto">
+  <img src="https://img.shields.io/badge/benchmark-67%20videos%20%C2%B7%20134%20tasks-7A5C9E" alt="Benchmark: 67 videos, 134 tasks">
+</p>
+
+<p align="center">
+  <a href="#method">Method</a> ·
+  <a href="#benchmark">Benchmark</a> ·
+  <a href="#results">Results</a> ·
+  <a href="#quick-start-cpu-only-no-credentials">Quick start</a> ·
+  <a href="#running-the-experiments">Experiments</a> ·
+  <a href="#citation">Citation</a>
+</p>
+
+## Overview
 
 <p align="center">
   <img src="assets/teaser.png" width="100%" alt="Single-pass editing, PE Loop and RecastAgent on source-conditioned video recasting">
@@ -11,12 +29,17 @@ visual world, such as a hand-drawn cartoon, a film universe or a craft material,
 keeping its essential actions, interactions and spatial relations. It changes the
 world in which an event happens, not the event itself.
 
-**RecastAgent** is a training-free agentic framework for this task. An
-**Experience-Guided Planner** chooses both the editing prompt and the *input video
-state* (the source or any saved candidate) at each step. A **Visual Critic** reviews
-every result against the original request. An **Experience Accumulation** module turns
-completed trajectories into conditional, evidence-linked advice for later tasks. All
-model weights stay frozen.
+**RecastAgent** is a training-free agentic framework for this task:
+
+- 🧭 **Experience-Guided Planner**: chooses both the editing prompt and the *input video
+  state* at each step, either the source or any saved candidate, so it can build on
+  partial progress or backtrack.
+- 🔍 **Visual Critic**: reviews every result against the original request and gives
+  qualitative feedback, not a score.
+- 📚 **Experience Accumulation**: turns completed trajectories into conditional,
+  evidence-linked advice for later tasks.
+
+All model weights stay frozen.
 
 ## Method
 
