@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="#citation"><img src="https://img.shields.io/badge/Paper-coming%20soon-B31B1B?logo=arxiv&logoColor=white" alt="Paper (coming soon)"></a>
+  <a href="https://arxiv.org/abs/2611.32196"><img src="https://img.shields.io/badge/arXiv-2611.32196-B31B1B?logo=arxiv&logoColor=white" alt="arXiv 2611.32196"></a>
   <a href="https://zzzyxii.github.io/RecastAgent/"><img src="https://img.shields.io/badge/Project-Page-1F6FEB?logo=githubpages&logoColor=white" alt="Project page"></a>
   <a href="benchmark_data/README.md"><img src="https://img.shields.io/badge/Benchmark-67%20videos%20%C2%B7%20134%20tasks-7A5C9E" alt="Benchmark: 67 videos, 134 tasks"></a>
   <a href="#benchmark"><img src="https://img.shields.io/badge/Data-videos%20coming%20soon-FFB000?logo=huggingface&logoColor=white" alt="Benchmark videos (coming soon)"></a>
@@ -268,9 +268,10 @@ Model weights and benchmark videos are not distributed here.
 ## Citation
 
 ```bibtex
-@misc{recastagent,
-  title  = {What to Change, What to Keep: Experience-Evolving Agents for Video Recasting},
-  author = {Anonymous},
-  year   = {2026}
+@article{zhang2026recastagent,
+  title   = {What to Change, What to Keep: Experience-Evolving Agents for Video Recasting},
+  author  = {Zhang, Shiying and Zhu, Yuxia and Xue, Huaze and Dang, Shengqi and Wu, Yizhen and Li, Yijie},
+  journal = {arXiv preprint arXiv:2611.32196},
+  year    = {2026}
 }
 ```
